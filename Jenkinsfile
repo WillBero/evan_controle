@@ -12,7 +12,7 @@ pipeline {
         stage('Lint Terraform') {
             steps {
                     sh 'ls'
-                    sh 'tflint --chdir .'
+                    sh 'tflint --chdir . --verbose'
                 }
             }
         
